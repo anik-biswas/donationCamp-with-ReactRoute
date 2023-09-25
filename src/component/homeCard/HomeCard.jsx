@@ -10,7 +10,7 @@ const HomeCard = () => {
         
     },[])
  return (
-        <div className="grid grid-cols-4 justify-between gap-7 my-10">
+        <div className="grid grid-cols-4 justify-between gap-10 my-10">
             {
                 donations.map(donation => <Card donation={donation} key={donation.id}></Card>)
             }

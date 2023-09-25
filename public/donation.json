@@ -1,13 +1,13 @@
 {
-    "donationDetails": [
+    "data": [
       {
         "id": 1,
         "image": "https://i.ibb.co/dQHqx3K/Health.png",
         "cat_id": "health",
         "category": "Health",
         "title": "Medical Supplies",
-        "title_color": "#FFf",
-        "card_color": "rgba(0, 82, 255, 0.15);        ",
+        "title_color": "rgba(0, 82, 255, 1)",
+        "card_color": "rgba(0, 82, 255, 0.15)",        
         "text_color": "#0052FF",
         "description": "Donate medical supplies for those in need.",
         "price": 50
@@ -54,8 +54,8 @@
         "cat_id": "health",
         "category": "Health",
         "title": "Medication Fund",
-        "title_color": "#FFf",
-        "card_color": "rgba(0, 82, 255, 0.15);        ",
+        "title_color": "rgba(0, 82, 255, 1)",
+        "card_color": "rgba(0, 82, 255, 0.15)",       
         "text_color": "#0052FF",
         "description": "Contribute to a fund for essential medications.",
         "price": 60
@@ -102,8 +102,8 @@
         "cat_id": "health",
         "category": "Health",
         "title": "Vaccination Campaign",
-        "title_color": "#FFf",
-        "card_color": "rgba(0, 82, 255, 0.15);        ",
+        "title_color": "rgba(0, 82, 255, 1)",
+        "card_color": "rgba(0, 82, 255, 0.15)",
         "text_color": "#0052FF",
         "description": "Support a vaccination campaign for public health.",
         "price": 35

@@ -1,4 +1,12 @@
+import { NavLink } from "react-router-dom";
+
 const Nav = () => {
+
+    const  links = <>
+                <li className="mr-5" ><NavLink to="/">Home</NavLink></li>
+                <li className="mr-5"><NavLink to="/duration">Duration</NavLink></li>
+                <li className="mr-5"><NavLink to="/statistics">Statistics</NavLink></li>
+    </>
     return (
         // <div>
             
@@ -9,10 +17,8 @@ const Nav = () => {
               {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
             </div>
             <div className="flex-none">
-              <ul className="menu menu-horizontal px-2 text-xl font-bold">
-                <li><a>Home</a></li>
-                <li><a>Donation</a></li>
-                <li><a>Statics</a></li>
+              <ul className="menu menu-horizontal px-2 text-xl  font-bold">
+                {links }
 
                 {/* <li>
                   <details>
@@ -20,8 +26,7 @@ const Nav = () => {
                       Parent
                     </summary>
                     <ul className="p-2 bg-base-100">
-                      <li><a>Link 1</a></li>
-                      <li><a>Link 2</a></li>
+                      {links }
                     </ul>
                   </details>
                 </li> */}

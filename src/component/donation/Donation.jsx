@@ -7,6 +7,7 @@ const Donation = () => {
     const donationsData = useLoaderData();
     const donations = donationsData.data;
     const [storeDonation , setStoreDonation] = useState([]);
+    const [dataLength,setDataLength] =useState(4);
     useEffect ( () => {
         const storeDonationIds = getStoredDonate();
        
@@ -26,11 +27,21 @@ const Donation = () => {
     },[])
     //console.log(storeDonation );
     return (
+        <div>
         <div className="grid grid-cols-2 gap-10 my-10">
             {
-                 storeDonation.map(donation => <DonationCard donation={donation} key={donation.id}></DonationCard>)
-            }
+                 storeDonation.slice(0,dataLength).map(donation => <DonationCard donation={donation} key={donation.id}></DonationCard>)
+            
+           }
+           </div>
+           <div className="w-full  text-center">
+           <div className={dataLength===storeDonation.length&&'hidden' ||""}  >
+            <button onClick={()=> setDataLength(storeDonation.length)} className="btn btn-primary w-32 ">Show All</button>
+            </div>
+           </div>
+             
         </div>
+        
     );
 };
 

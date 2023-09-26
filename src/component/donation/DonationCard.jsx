@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
 const DonationCard = (donation) => {
-    console.log(donation);
+    //console.log(donation);
     const { id,image  , text_color,title_color, title ,category , card_color,description, price} = donation.donation;
     //console.log(title);
     return (
         <div>
-            <div className="card lg:card-side bg-base-100 shadow-xl rounded-none" style={{backgroundColor:card_color}}>
+            <div className="card lg:card-side bg-base-100 shadow-md rounded-none" style={{backgroundColor:card_color}}>
             <img src={image} alt="Album"/>
             <div className="card-body">
             <button className="w-28 h-10 rounded-md " style={{backgroundColor:card_color,color:text_color}}>{category}</button>

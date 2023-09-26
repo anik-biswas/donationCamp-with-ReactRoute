@@ -9,6 +9,7 @@ const HomeCard = () => {
         .then(data =>setDonation(data.data))
         
     },[])
+
  return (
         <div className="grid grid-cols-4 justify-between gap-10 my-10">
             {

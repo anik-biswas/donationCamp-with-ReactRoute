@@ -1,9 +1,9 @@
 import { NavLink } from "react-router-dom";
-
+import "./Nav.css"; 
 const Nav = () => {
 
     const  links = <>
-                <li className="mr-5" ><NavLink to="/">Home</NavLink></li>
+                <li className="mr-5" ><NavLink to="/"  >Home</NavLink></li>
                 <li className="mr-5"><NavLink to="/donations">Donation</NavLink></li>
                 <li className="mr-5"><NavLink to="/statistics">Statistics</NavLink></li>
     </>
@@ -11,13 +11,13 @@ const Nav = () => {
         // <div>
             
             // </div>
-            <div className="navbar bg-base-100 ">
+            <div className="navbar  ">
             <div className="flex-1">
                 <img src="https://i.ibb.co/BPgP8Ks/Logo.png" alt="" />
               {/* <a className="btn btn-ghost normal-case text-xl">daisyUI</a> */}
             </div>
             <div className="flex-none">
-              <ul className="menu menu-horizontal px-2 text-xl  font-bold">
+              <ul className=" menu menu-horizontal px-2 text-xl  font-bold">
                 {links }
 
                 {/* <li>

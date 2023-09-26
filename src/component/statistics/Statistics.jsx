@@ -1,7 +1,7 @@
 const Statistics = () => {
     return (
         <div>
-            
+            this page is statistics
         </div>
     );
 };

@@ -35,15 +35,15 @@ import { getStoredDonate } from '../../utility/localstorage';
     const COLORS = ['#FF5733', '#33FF57'];
   
     return (
-      <div className='items-center justify-center text-center' width="100%" height="100%">
+      <div className='items-center justify-center text-center' style={{ maxWidth: '100%', height: 'auto' }}>
        
         <div className='inline-block'>
-        <PieChart  width={400} height={400}>
+        <PieChart  width={300} height={300}>
           <Pie
             dataKey={`value`}
             data={datas}
-            cx="200"
-            cy="200"
+            cx="150"
+            cy="150"
             outerRadius={100}
             fill="#8884d8"
             label

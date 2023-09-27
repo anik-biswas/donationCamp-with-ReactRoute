@@ -7,8 +7,8 @@ import { getStoredDonate } from '../../utility/localstorage';
     const donationsData = useLoaderData();
     const donations = donationsData.data;
     const totalPrice = donations.reduce((total, donation) => total + donation.price, 0);
-    const [storeDonation , setStoreDonation] = useState([]);
-    const [totalDonation, setTotalDonation] = useState(0); // Define totalDonation here
+   // const [storeDonation , setStoreDonation] = useState([]);
+    const [totalDonation, setTotalDonation] = useState(0); 
 
         useEffect(() => {
             const storeDonationIds = getStoredDonate();
@@ -32,7 +32,6 @@ import { getStoredDonate } from '../../utility/localstorage';
         { name: 'Total Donation', value: donationPercent },
       ];
    
-    // Define custom colors for each segment of the pie chart
     const COLORS = ['#FF5733', '#33FF57'];
   
     return (

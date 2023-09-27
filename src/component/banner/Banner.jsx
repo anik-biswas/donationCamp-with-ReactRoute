@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import Card from "./FilterCard";
-import HomeCard from "../homeCard/HomeCard";
+
 import FilterCard from "./FilterCard";
 const Banner = ({ onSearch }) => {
     const [donations,setDonation] = useState([]);
@@ -33,11 +32,11 @@ const Banner = ({ onSearch }) => {
                 <div className="hero-overlay relative  bg-white opacity-90"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-6xl">
-                    <h1 className="mb-5 text-5xl text-black font-bold">I Grow By Helping People In Need</h1>
+                    <h1 className="mb-5 text-2xl md:text-3xl lg:text-5xl text-black font-bold">I Grow By Helping People In Need</h1>
                     <input
                         type="text"
                         placeholder="Search by category"
-                        className="w-80 h-10 border"
+                        className="w-60 md:w-80 h-10 border text-black"
                         value={categoryName}
                         onChange={handleCategoryNameChange}
                      />
@@ -47,7 +46,7 @@ const Banner = ({ onSearch }) => {
                     </div>
                 </div>
             </div> 
-            <div className="grid grid-cols-4 justify-between gap-10 my-10">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 justify-between gap-10 my-10">
             {
                 
                 filteredCards.map(fiters=><FilterCard donation={fiters} key={fiters.id}></FilterCard>) 
